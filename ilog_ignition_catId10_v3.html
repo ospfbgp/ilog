@@ -80,17 +80,20 @@
                         {
                             extend: 'colvis',
                             text: 'Display Columns',
+                            className: 'columns',
                             columns: ':not(.noVis)'
                         },
                         {
                             extend: 'pageLength',
                             text: 'Select Rows',
+                            className: 'rows'
                         },
                         {
                             text: 'Refresh',
+                            className: 'refresh',
                             action: function () { otable.ajax.reload(); }
                         }
-                    ]
+                    ],
                 } );
                 // Filter on Enter
                 $('input.global_filter').on('keydown', function (e) {

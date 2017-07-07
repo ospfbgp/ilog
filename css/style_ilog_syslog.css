@@ -99,3 +99,7 @@ a.btn.btn-default.refresh {
    color: white;
    background-color: #377bb5;
 }
+
+.table-border,thead,tbody,tr {
+  border: 10px dotted #4c4c4c;
+}

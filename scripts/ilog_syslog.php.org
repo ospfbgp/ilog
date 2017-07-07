@@ -42,8 +42,8 @@ $columns = array(
 
 // SQL server connection information
 $sql_details = array(
-	'user' => 'youruser',
-	'pass' => 'yourpassword',
+	'user' => 'ilog',
+	'pass' => 'ilogpassword',
 	'db'   => 'ilog',
 	'host' => 'localhost'
 );

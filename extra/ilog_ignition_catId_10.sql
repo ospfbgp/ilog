@@ -41,4 +41,4 @@ CREATE TABLE `ignition_catId_10` (
     PRIMARY KEY (`seq`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-GRANT ALL PRIVILEGES ON ilog.* TO 'ilog'@'localhost' IDENTIFIED BY 'ilog';
+GRANT ALL PRIVILEGES ON ilog.* TO 'ilog'@'localhost' IDENTIFIED BY 'ilogpassword';

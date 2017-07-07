@@ -28,16 +28,19 @@
                        .appendTo( $('#example_wrapper .col-sm-6:eq(0)'));
                     },
                     ajax: "./scripts/ilog_ignition_catId_10.php",
-                    mark: true,
-                    lengthMenu: [
+                     scrollY: '70vh',
+                   scrollCollapse: true,
+		   mark: true,
+                   lengthMenu: [
                         [ 20, 50, 100, 200, 500, 1000 ],
                         [ '20 rows', '50 rows', '100 rows', '200 rows', '500 rows', '1000 rows' ]
                     ],
-                    order: [[ 0, 'desc' ]],
-                    search: { "regex": true },
-                    stateSave: true,
-                    colReorder: true,
-                    dom: "<'row'<'col-xs-6'B>>" + "<'row'<'col-xs-6'i><'col-xs-6'p>>" + "<'row'<'col-lg-12'rt>>" + "<'row'<'col-xs-6'i><'col-xs-6'p>>",
+                   LengthMenu: [[50, 100, 250, 500, 1000], [50, 100, 250, 500, 1000]],
+                   order: [[ 0, "desc" ]],
+                   search: { "regex": true },
+                   stateSave: true,
+                   colReorder: true,
+                   dom: "<'row'<'col-xs-6'B>>" + "<'row'<'col-lg-12'rt>>" + "<'row'<'col-xs-6'i><'col-xs-6'p>>",
                     columns: [  
                         { "visible": true }, 
                         { "visible": true }, 

@@ -11,6 +11,12 @@
 }
 
 /* change color of column that can not be sorted on dataTables */
+.FixedHeader_Cloned th { 
+    font-size: 12px;
+    color: white;
+    background-color: #da585e;
+}
+
 table#example th {
     font-size: 12px;
     color: white;

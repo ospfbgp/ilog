@@ -53,8 +53,8 @@ $columns = array(
 
 // SQL server connection information
 $sql_details = array(
-	'user' => 'youruser',
-	'pass' => 'yourpassword',
+	'user' => 'ilog',
+	'pass' => 'ilog',
 	'db'   => 'ilog',
 	'host' => 'localhost'
 );

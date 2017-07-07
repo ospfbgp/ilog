@@ -43,3 +43,5 @@ CREATE TABLE `ignition_catId_10` (
     `seq` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (`seq`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+GRANT ALL PRIVILEGES ON ilog.* TO 'ilog'@'localhost' IDENTIFIED BY 'ilog';

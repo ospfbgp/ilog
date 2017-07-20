@@ -1,8 +1,8 @@
 #!/bin/bash
-# This will remove all records older than 5 days
+# This will remove all records older than 7 days
 # needs to run ass cron daily
-SQL_syslog="DELETE FROM syslog WHERE datetime < NOW() - INTERVAL 8 DAY"
-SQL_ignition_catId_10="DELETE FROM ignition_catId_10 WHERE datetime < NOW() - INTERVAL 8 DAY"
+SQL_syslog="DELETE FROM syslog WHERE datetime < NOW() - INTERVAL 7 DAY"
+SQL_ignition_catId_10="DELETE FROM ignition_catId_10 WHERE datetime < NOW() - INTERVAL 7 DAY"
 
 MYSQL_USER="ilog"
 MYSQL_PASS="ilogpassword"

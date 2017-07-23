@@ -1,0 +1,13 @@
+# add these to the mariadb configuration to increase performance when doing mysql queries
+
+#
+# * Fine Tuning
+#
+innodb_buffer_pool_size = 2G
+innodb_buffer_pool_instances = 2
+
+#
+# * Query Cache Configuration
+#
+query_cache_limit       = 128M
+query_cache_size        = 8M

@@ -3,6 +3,7 @@ USE ilog;
 
 CREATE TABLE `syslog` (
     `host` varchar(32) DEFAULT NULL,
+    `sourceip` varchar(32) DEFAULT NULL,
     `facility` varchar(10) DEFAULT NULL,
     `priority` varchar(10) DEFAULT NULL,
     `level` varchar(10) DEFAULT NULL,
@@ -13,6 +14,7 @@ CREATE TABLE `syslog` (
     `seq` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (`seq`),
     KEY `host` (`host`),
+    KEY `sourceip` (`sourceip`),
     KEY `program` (`program`),
     KEY `datetime` (`datetime`),
     KEY `priority` (`priority`),

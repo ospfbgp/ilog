@@ -1,4 +1,5 @@
 # add these to the mariadb configuration to increase performance when doing mysql queries
+# on Ubuntu edit file /etc/mysql/mariadb.conf.d/50-server.cnf and tune the follwing parameters to increase performance of queries for ilog
 
 #
 # * Fine Tuning

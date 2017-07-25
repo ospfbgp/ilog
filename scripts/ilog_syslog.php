@@ -32,12 +32,13 @@ $columns = array(
 	array( 'db' => 'seq',      'dt' => 0 ),
 	array( 'db' => 'datetime', 'dt' => 1 ),
 	array( 'db' => 'host',     'dt' => 2 ),
-	array( 'db' => 'facility', 'dt' => 3 ),
-	array( 'db' => 'priority', 'dt' => 4 ),
-	array( 'db' => 'level',    'dt' => 5 ),
-	array( 'db' => 'tag',      'dt' => 6 ),
-	array( 'db' => 'program',  'dt' => 7 ),
-	array( 'db' => 'msg',      'dt' => 8 )
+	array( 'db' => 'sourceip', 'dt' => 3 ),
+	array( 'db' => 'facility', 'dt' => 4 ),
+	array( 'db' => 'priority', 'dt' => 5 ),
+	array( 'db' => 'level',    'dt' => 6 ),
+	array( 'db' => 'tag',      'dt' => 7 ),
+	array( 'db' => 'program',  'dt' => 8 ),
+	array( 'db' => 'msg',      'dt' => 9 )
 );
 
 // SQL server connection information

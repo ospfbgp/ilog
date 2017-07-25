@@ -61,7 +61,8 @@
                    stateSave: true,
                    colReorder: true,
                    dom: "<'row'<'col-xs-6'B>>" + "<'row'<'col-lg-12'rt>>" + "<'row'<'col-xs-6'i><'col-xs-6'p>>",
-                   columns: [  
+                   columns: [
+		       null,
                        null, 
                        null,  
                        null, 
@@ -80,7 +81,8 @@
                        { "orderable": true, "targets": 5 },
                        { "orderable": true, "targets": 6 },
                        { "orderable": true, "targets": 7 },
-                       { "orderable": true, "targets": 8 }
+                       { "orderable": true, "targets": 8 },
+		       { "orderable": true, "targets": 9 }
                    ],
                     buttons: [
                         {
@@ -227,6 +229,7 @@
                         <th>Seq</th>
                         <th>Datetime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
                         <th>Host</th>
+			<th>SourceIP</th>
                         <th>Facility</th>
                         <th>Priority</th>
                         <th>Level</th>

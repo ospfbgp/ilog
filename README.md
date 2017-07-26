@@ -7,5 +7,5 @@ git clone https://github.com/ospfbgp/ilog
 </pre>
 
 <p align="center">
-  <img src="extrea/iSyslog_screenshot.png" width="1000"/>
+  <img src="extra/iLog_Syslog_search_screen_1.png" width="1000"/>
 </p>

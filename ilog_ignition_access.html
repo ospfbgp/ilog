@@ -71,7 +71,7 @@
                                 $(td).css('color', 'green')
                                 $(td).css('font-weight', 'bold')
                             }
-                            var refail = new RegExp("[Ff]ailed");
+                            var refail = new RegExp("[Ff]ailed|[Dd]eny");
                             if (refail.test(cellData)) {
                                 $(td).css('color', 'red')
                                 $(td).css('font-weight', 'bold')

@@ -21,6 +21,6 @@ CREATE TABLE `syslog` (
     KEY `facility` (`facility`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+# Create user ilog
 CREATE USER 'ilog'@'localhost' IDENTIFIED BY 'ilogpassword';
-
 GRANT ALL PRIVILEGES ON ilog.* TO 'ilog'@'localhost';

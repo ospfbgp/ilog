@@ -1,3 +1,5 @@
+USE ilog;
+
 CREATE TABLE `ignition_catId_10` (
     `Id` bigint(32) unsigned DEFAULT NULL,
     `datetime` datetime DEFAULT NULL,

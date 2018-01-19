@@ -12,7 +12,7 @@
 
 /* change color of column that can not be sorted on dataTables */
 .dataTable th {
-    font-size: 14px;
+    font-size: 12px;
     color: white;
     background-color: #da585e;
 }

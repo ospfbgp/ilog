@@ -104,7 +104,7 @@
                                     delete localStorage[key];
                                 }
                                 $("#global_filter").val("");
-                                filterGlobal();
+                                $('#example').DataTable().search( $('#global_filter').val()).draw();
                                 window.location.reload(false); 
                             }
                         }

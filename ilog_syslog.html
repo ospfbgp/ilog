@@ -74,14 +74,14 @@
                        null
                    ],
                    columnDefs: [
-                       { "orderable": true, "width": "30px",  "targets": 0 },
-                       { "orderable": true, "width": "100px", "targets": 1 },
-                       { "orderable": true, "width": "100px", "targets": 2 },
+                       { "orderable": true, "width": "35px",  "targets": 0 },
+                       { "orderable": true, "width": "70px", "targets": 1 },
+                       { "orderable": true, "width": "70px", "targets": 2 },
                        { "orderable": true, "width": "70px",  "targets": 3 },
-                       { "orderable": true, "width": "60px",  "targets": 4 },
-                       { "orderable": true, "width": "40px",  "targets": 5 },
-                       { "orderable": true, "width": "35px",  "targets": 6 },
-                       { "orderable": true, "width": "25px",  "targets": 7 },
+                       { "orderable": true, "width": "30px",  "targets": 4 },
+                       { "orderable": true, "width": "30px",  "targets": 5 },
+                       { "orderable": true, "width": "30px",  "targets": 6 },
+                       { "orderable": true, "width": "20px",  "targets": 7 },
                        { "orderable": true, "width": "30px",  "targets": 8 },
                        { "orderable": true, "targets": 9 }
                    ],
@@ -107,16 +107,16 @@
                             text: 'Reset',
                             className: 'refresh',
                             action: function () { 
-                                 for(key in localStorage) {
-                                      delete localStorage[key];
-                                 }
+                                for(key in localStorage) {
+                                    delete localStorage[key];
+                                }
                                 $("#global_filter").val("");
                                 $("#col1_filter").val("");
                                 $("#col2_filter").val("");
                                 $("#col8_filter").val("");
                                 $("#col9_filter").val("");
                                 filterGlobal();
-                                 window.location.reload(false); 
+                                window.location.reload(false); 
                             }
                         }
                     ],

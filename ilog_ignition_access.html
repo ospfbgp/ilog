@@ -91,10 +91,22 @@
                             text: 'Select Rows',
                             className: 'rows'
                         },
-                        {
-                            text: 'Refresh',
+			{
+                            text: 'Refresh logs',
                             className: 'refresh',
                             action: function () { otable.ajax.reload(); }
+                        },
+                        {
+                            text: 'Reset',
+                            className: 'refresh',
+                            action: function () { 
+                                for(key in localStorage) {
+                                    delete localStorage[key];
+                                }
+                                $("#global_filter").val("");
+                                filterGlobal();
+                                window.location.reload(false); 
+                            }
                         }
                     ],
                 } );

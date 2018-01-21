@@ -43,18 +43,19 @@
                var otable = $('#example').DataTable( {
                    processing: true,
                    serverSide: true,
-                    initComplete : function () {
-                        otable.buttons().container()
+                   initComplete : function () {
+                       otable.buttons().container()
                        .appendTo( $('#example_wrapper .col-sm-6:eq(0)'));
-                    },
+                   },
                    ajax: "./scripts/ilog_syslog.php",
                    scrollY: '70vh',
                    scrollCollapse: true,
+                   scrollX: true,
 		   mark: true,
                    lengthMenu: [
-                        [ 32, 64, 128, 256, 512, 1024, 2048 ],
-                        [ '32 logs', '64 logs', '128 logs', '256 logs', '512 logs', '1024 logs', '2048 logs']
-                    ],
+                       [ 32, 64, 128, 256, 512, 1024, 2048 ],
+                       [ '32 logs', '64 logs', '128 logs', '256 logs', '512 logs', '1024 logs', '2048 logs']
+                   ],
                    pageLength: 256,
 		   order: [[ 0, "desc" ]],
                    search: { "regex": true },

@@ -1,3 +1,4 @@
+# setup database to store Extreme Ignition server access logs
 USE ilog;
 
 CREATE TABLE `ignition_catId_10` (

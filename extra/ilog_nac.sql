@@ -49,3 +49,8 @@ CREATE TABLE `nac` (
     `groupDescr1` varchar(100) DEFAULT NULL,
     `groupDescr2` varchar(100) DEFAULT NULL,
     `groupDescr3` varchar(100) DEFAULT NULL,
+    `seq` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (`seq`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+GRANT ALL PRIVILEGES ON ilog.* TO 'ilog'@'localhost' IDENTIFIED BY 'ilogpassword';

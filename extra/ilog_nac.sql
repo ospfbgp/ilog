@@ -3,6 +3,7 @@ USE ilog;
 
 CREATE TABLE `nac` (
     `datetime` datetime DEFAULT NULL,
+    `host` varchar(32) DEFAULT NULL,
     `macAddress` varchar(32) DEFAULT NULL,
     `ipAddress` varchar(32) DEFAULT NULL,
     `username` varchar(100) DEFAULT NULL,

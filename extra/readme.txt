@@ -1,11 +1,2 @@
-# ilog
-This uses jquery, DataTables and Bootstrap to allow you to search a mysql database with syslog messages.  The search is very fast and uses server side processing.  I built a database and table for the logs.  I then used syslog-ng to send the logs to mysql database. 
-
-To clone repository
-<pre>
-git clone https://github.com/ospfbgp/ilog
-</pre>
-
-<p align="center">
-  <img src="extra/iLog_Syslog_search_screen_1.png" width="1000"/>
-</p>
+# You will need to setup Extreme Control to send notifications with the following format
+macAddress=$macAddress,ipAddress=$ipAddress,username=$username,hostname=$hostname,operatingSystemName=$operatingSystemName,ESType=$ESType,state=$state,stateDescr=$stateDescr,extendedState=$extendedState,switchIP=$switchIP,switchLocation=$switchLocation,switchPort=$switchPort,switchPortId=$switchPortId,authType=$authType,allAuthTypes=$allAuthTypes,nacProfileName=$nacProfileName,reason=$reason,policy=$policy,firstSeentime=$firstSeentime,lastSeenTime=$lastSeenTime,nacApplianceIp=$nacApplianceIp,nacapplianceGroupName=$nacapplianceGroupName,lastScanTime=$lastScanTime,lastScanResultState=$lastScanResultState,ssid=$ssid,wirelessAp=$wirelessAp,ifAlias=$ifAlias,ifDescription=$ifDescription,ifName=$ifName,custom1=$custom1,custom2=$custom2,custom3=$custom3,custom4=$custom4,regName=$regName,regEmail=$regEmail,regPhone=$regPhone,regData1=$regData1,regData2=$regData2,regData3=$regData3,regData4=$regData4,regData5=$regData5,regDeviceDescr=$regDeviceDescr,regSponsor=$regSponsor,memberOfGroups=$memberOfGroups,groupDescr1=$groupDescr1,groupDescr2=$groupDescr2,groupDescr3=$groupDescr3

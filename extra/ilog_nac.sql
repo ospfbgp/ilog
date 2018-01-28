@@ -1,4 +1,4 @@
-# setup database to store extreme control notifications
+# setup database to store Extreme Control end-system notifications
 USE ilog;
 
 CREATE TABLE `nac` (

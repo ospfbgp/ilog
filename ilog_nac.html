@@ -103,7 +103,20 @@
                        { "orderable": true, "width": "70px",  "targets": 26 },
                        { "orderable": true, "width": "70px",  "targets": 27 },
                        { "orderable": true, "width": "70px",  "targets": 28 },
-                       { "orderable": true, "width": "70px",  "targets": 29 }
+                       { "orderable": true, "width": "70px",  "targets": 29 },
+                       "targets": [ 8 ],
+                       "createdCell": function (td, cellData, rowData, row, col) {
+                            var reauth = new RegExp("[Aa][Cc][Cc][Ee][Pp][Tt]|DISCONNECTED");
+                            if (reauth.test(cellData)) {
+                                $(td).css('color', 'green')
+                                $(td).css('font-weight', 'bold')
+                            }
+                            var refail = new RegExp("[Rr][Ee][Jj][Ee][Cc][Tt]");
+                            if (refail.test(cellData)) {
+                                $(td).css('color', 'red')
+                                $(td).css('font-weight', 'bold')
+                            }
+                       }
                    ],
                    fixedColumns: true,
                     //buttons: [ 'colvis', 'pageLength' ]

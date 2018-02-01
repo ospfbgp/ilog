@@ -63,15 +63,15 @@
                         { "visible": true }, 
                         { "visible": false }
                     ],
-                       "columnDefs": [ {
-                       "targets": [ 8 ],
+                    columnDefs: [ {
+		       "targets": [ 5, 10 ],
                        "createdCell": function (td, cellData, rowData, row, col) {
-                            var reauth = new RegExp("[Aa][Cc][Cc][Ee][Pp][Tt]|DISCONNECTED");
+                            var reauth = new RegExp("Authenticated|Allow");
                             if (reauth.test(cellData)) {
                                 $(td).css('color', 'green')
                                 $(td).css('font-weight', 'bold')
                             }
-                            var refail = new RegExp("[Rr][Ee][Jj][Ee][Cc][Tt]");
+                            var refail = new RegExp("[Ff]ailed|[Dd]eny");
                             if (refail.test(cellData)) {
                                 $(td).css('color', 'red')
                                 $(td).css('font-weight', 'bold')

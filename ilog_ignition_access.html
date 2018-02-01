@@ -64,14 +64,14 @@
                         { "visible": false }
                     ],
                        "columnDefs": [ {
-                       "targets": [ 5, 10 ],
+                       "targets": [ 8 ],
                        "createdCell": function (td, cellData, rowData, row, col) {
-                            var reauth = new RegExp("Authenticated|Allow");
+                            var reauth = new RegExp("[Aa][Cc][Cc][Ee][Pp][Tt]|DISCONNECTED");
                             if (reauth.test(cellData)) {
                                 $(td).css('color', 'green')
                                 $(td).css('font-weight', 'bold')
                             }
-                            var refail = new RegExp("[Ff]ailed|[Dd]eny");
+                            var refail = new RegExp("[Rr][Ee][Jj][Ee][Cc][Tt]");
                             if (refail.test(cellData)) {
                                 $(td).css('color', 'red')
                                 $(td).css('font-weight', 'bold')

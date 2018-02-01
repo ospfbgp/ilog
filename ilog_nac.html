@@ -82,7 +82,20 @@
                        { "orderable": true, "width": "70px",  "targets": 5 },
                        { "orderable": true, "width": "70px",  "targets": 6 },
                        { "orderable": true, "width": "70px",  "targets": 7 },
-                       { "orderable": true, "width": "70px",  "targets": 8 },
+                       { "orderable": true, "width": "70px",  "targets": 8,
+                         "createdCell": function (td, cellData, rowData, row, col) {
+                             var reauth = new RegExp("[Aa][Cc][Cc][Ee][Pp][Tt]|DISCONNECTED");
+                             if (reauth.test(cellData)) {
+                                 $(td).css('color', 'green')
+                                 $(td).css('font-weight', 'bold')
+                             }
+                             var refail = new RegExp("[Rr][Ee][Jj][Ee][Cc][Tt]");
+                             if (refail.test(cellData)) {
+                                 $(td).css('color', 'red')
+                                 $(td).css('font-weight', 'bold')
+                             }
+                         } 
+                       },
                        { "orderable": true, "width": "150px", "targets": 9 },
                        { "orderable": true, "width": "70px",  "targets": 10 },
                        { "orderable": true, "width": "70px",  "targets": 11 },

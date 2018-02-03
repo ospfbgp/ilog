@@ -78,7 +78,7 @@ mark{
 .input-group-xs>.input-group-addon,
 .input-group-xs>.input-group-btn>.btn {
     height: 22px;
-    column-width: 40px;
+    column-width: 60px;
     padding: 1px 5px;
     font-size: 10px;
     line-height: 1.5;
@@ -89,7 +89,6 @@ a.btn.btn-default.columns {
     font-size: 10px;
     height: 22px;
     color: white;
-    //background-color: #377bb5;
     background-color: #377bb5;
 }
 a.btn.btn-default.rows {
@@ -97,7 +96,6 @@ a.btn.btn-default.rows {
     font-size: 10px;
     height: 22px;
    color: white;
-   //background-color: #377bb5;
    background-color: #377bb5;
 }
 a.btn.btn-default.refresh {
@@ -105,6 +103,5 @@ a.btn.btn-default.refresh {
     font-size: 10px;
     height: 22px;
     color: white;
-    //background-color: #377bb5;
     background-color: #377bb5;
 }
